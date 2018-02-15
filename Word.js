@@ -1,11 +1,15 @@
 
-let Letter = require('./L1.js');
+let
+  names = require('starwars-names'),
+  Letter = require('./L1.js'),
+  l1 = require('./L1.js');
+
 
 module.exports = class Words{
 
   constructor(arrayOfLettersFromWord, stringRepresentingWord, guessedCharacter){
 
-    this.arrayOfLettersFromWord = name.random.split,
+    this.arrayOfLettersFromWord = names.random(),
     this.stringRepresentingWord = arrayOfLettersFromWord => {
       for (var i = 0; i < (this.arrayOfLettersFromWord).length; i++)
       {
@@ -19,7 +23,7 @@ module.exports = class Words{
     this.guessedCharacter = (argFromPrompt) => {
       //answer from the prompt
       //put that into letter.test
-      return console.log('argFromPrompt')
+      return argFromPrompt;
       // return Letter.test(this.promptanswer
 
     }
